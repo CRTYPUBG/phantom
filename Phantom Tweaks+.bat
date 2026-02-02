@@ -1697,7 +1697,7 @@ chcp 437 >nul
 powershell -NoProfile Expand-Archive "%TEMP%\nvidiaProfileInspector.zip" -DestinationPath "%TEMP%\nvidiaProfileInspector" 2>nul
 chcp 65001 >nul
 del /F /Q "%TEMP%\nvidiaProfileInspector.zip" 2>nul
-curl -g -L -# -o "%TEMP%\nvidiaProfileInspector\NVIDIAProfileInspector.nip" "https://raw.githubusercontent.com/PHANTOM/PHANTOM-Tweaks/main/Tools/NVIDIA.nip" 2>nul
+curl -g -L -# -o "%TEMP%\nvidiaProfileInspector\NVIDIAProfileInspector.nip" "https://raw.githubusercontent.com/CRTYPUBG/phantom/refs/heads/main/Tools/NVIDIA.nip" 2>nul
 
 echo %c%[2/8] Configuring Driver Thread Priorities...%u%
 reg add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\Parameters" /v "ThreadPriority" /t REG_DWORD /d "31" /f >nul 2>&1
