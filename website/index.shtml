@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHANTOM TWEAKS+ | Ultimate Performance Engine</title>
+    
+    <!-- 1. UI Frameworks & Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- 2. Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    
+    <!-- 3. Plugin Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    
+    <style>
+        :root {
+            --phantom-bg: #0a0b10;
+            --phantom-accent: #00ffa3;
+            --phantom-violet: #8a2be2;
+            --phantom-glass: rgba(255, 255, 255, 0.03);
+            --phantom-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--phantom-bg);
+            color: #ffffff;
+            font-family: 'Outfit', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .glass-nav {
+            background: rgba(10, 11, 16, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--phantom-border);
+            z-index: 1000;
+        }
+
+        .hero-section {
+            padding: 150px 0 100px;
+            background: radial-gradient(circle at top right, rgba(138, 43, 226, 0.15), transparent),
+                        radial-gradient(circle at bottom left, rgba(0, 255, 163, 0.1), transparent);
+        }
+
+        .phantom-btn {
+            background: linear-gradient(45deg, var(--phantom-violet), #4b0082);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 700;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+        }
+
+        .phantom-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(138, 43, 226, 0.5);
+            color: white;
+        }
+
+        .stat-card {
+            background: var(--phantom-glass);
+            border: 1px solid var(--phantom-border);
+            border-radius: 15px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .stat-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: var(--phantom-accent);
+        }
+
+        .chart-container {
+            background: var(--phantom-glass);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid var(--phantom-border);
+        }
+
+        #owl-demo .item {
+            margin: 10px;
+        }
+
+        pre code {
+            border-radius: 10px;
+            background: #000 !important;
+        }
+
+        .footer {
+            border-top: 1px solid var(--phantom-border);
+            padding: 50px 0;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Transparent Navbar -->
+    <nav class="navbar navbar-expand-lg glass-nav fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 text-white" href="#">PHANTOM<span class="text-accent">+</span></a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="#benchmarks">Benchmarks</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="#repo">Repository</a></li>
+                </ul>
+                <a href="https://github.com/CRTYPUBG/phantom" class="phantom-btn ms-3">DOWNLOAD</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Content -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-1 fw-bold animate__animated animate__fadeInUp">PRECISION <span style="color: var(--phantom-accent)">PERFORMANCE</span></h1>
+            <p class="lead text-secondary mb-5 animate__animated animate__fadeInUp animate__delay-1s">Ultimate Windows Optimization for Competitive E-Sports</p>
+            
+            <div class="row g-4 mt-5">
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <i class="bi bi-cpu fs-1 text-accent mb-3 d-block"></i>
+                        <h3>CPU Priority</h3>
+                        <p class="text-secondary small">Synchronized Scheduler</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <i class="bi bi-speedometer fs-1 text-accent mb-3 d-block"></i>
+                        <h3>0.1ms Latency</h3>
+                        <p class="text-secondary small">Network Hardening</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <i class="bi bi-shield-lock fs-1 text-accent mb-3 d-block"></i>
+                        <h3>Signed Core</h3>
+                        <p class="text-secondary small">UEO586_CRTY Security</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <i class="bi bi-lightning-charge fs-1 text-accent mb-3 d-block"></i>
+                        <h3>Ultra Power</h3>
+                        <p class="text-secondary small">Stable Voltage Curve</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chart Logic -->
+    <section class="container py-5" id="benchmarks">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold mb-4">Frame Time <span class="text-accent">Stability</span></h2>
+                <p class="text-secondary">Phantom Tweaks+ locks system timers to eliminate micro-stuttering and input delay. Experience smooth, e-sports grade responsiveness.</p>
+                <div id="carousel-features" class="owl-carousel owl-theme mt-4">
+                    <div class="item"><div class="stat-card">Stable FPS</div></div>
+                    <div class="item"><div class="stat-card">Low Jitter</div></div>
+                    <div class="item"><div class="stat-card">Memory Purge</div></div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="chart-container">
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Highlight Section -->
+    <section class="container py-5" id="repo">
+        <div class="glass-nav p-5 rounded-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="mb-4"><i class="fab fa-github me-2"></i> Deployment Log</h3>
+                    <div id="markdown-content"></div>
+                    <pre><code class="language-bash">git push origin main
+# 🚀 PHANTOM TWEAKS+ :: Ultimate Kernel Edition
+# [SUCCESS] Binary signed and deployed to https://github.com/CRTYPUBG/phantom
+</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="text-secondary">© <span id="current-year"></span> Phantom Tweaks+. Developed by CRTYPUBG.</p>
+            <div class="fs-4">
+                <i class="fab fa-discord mx-2 text-secondary"></i>
+                <i class="fab fa-twitter mx-2 text-secondary"></i>
+                <i class="fab fa-github mx-2 text-secondary"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Block -->
+    <!-- 1. CDNs & Kernels -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.21/moment-timezone-with-data.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Owl Carousel
+            $(".owl-carousel").owlCarousel({
+                items: 2,
+                loop: true,
+                autoplay: true,
+                margin: 10,
+                dots: false
+            });
+
+            // Highlight.js
+            hljs.highlightAll();
+
+            // Moment.js
+            $('#current-year').text(moment().format('YYYY'));
+
+            // Marked.js
+            const markdown = "### Phantom Kernel Status: **Operational**";
+            document.getElementById('markdown-content').innerHTML = marked.parse(markdown);
+
+            // Chart.js
+            const ctx = document.getElementById('performanceChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['0ms', '5ms', '10ms', '15ms', '20ms', '25ms', '30ms'],
+                    datasets: [{
+                        label: 'Frame Latency (Batlez Legacy)',
+                        data: [12, 19, 3, 5, 2, 3, 10],
+                        borderColor: '#8a2be2',
+                        tension: 0.4
+                    }, {
+                        label: 'Frame Latency (Phantom Core)',
+                        data: [1, 1, 1.2, 1, 0.9, 1.1, 1],
+                        borderColor: '#00ffa3',
+                        backgroundColor: 'rgba(0, 255, 163, 0.1)',
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { labels: { color: "#fff" } }
+                    },
+                    scales: {
+                        y: { ticks: { color: "#fff" }, grid: { color: "rgba(255,255,255,0.1)" } },
+                        x: { ticks: { color: "#fff" }, grid: { color: "rgba(255,255,255,0.1)" } }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
