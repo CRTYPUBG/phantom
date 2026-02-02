@@ -1,0 +1,8 @@
+build/
+dist/
+production/
+__pycache__/
+*.spec
+convert_icon.py
+phantom_launcher.py
+app_icon.ico
